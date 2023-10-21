@@ -57,7 +57,7 @@ notes.delete('/:id', (req, res) => {
         body: dataNotes,
       };
       // saves updated notes after deleting
-      writeToFile('../db/db.json', dataNotes)
+      writeToFile('./db/db.json', dataNotes)
       res.json(response);
     })
 
