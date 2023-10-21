@@ -36,3 +36,6 @@ notes.post('/', (req, res) => {
       res.status(500).json({ error: 'An error occurred while saving the note.' });
     }
 });
+
+
+module.exports = notes;
